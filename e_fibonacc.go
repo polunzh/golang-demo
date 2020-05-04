@@ -1,17 +1,25 @@
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "time"
+)
+
+const LIM = 41
 
 func main() {
-  for i := 0; i < 10; i++ {
-    fmt.Println(i, fibonacc(i) )
+  start := time.Now()
+  for i := 0; i < LIM; i++ {
+    fmt.Println(i, fibonacci(i) )
   }
+
+	fmt.Printf("time costs: %d\n", time.Now().Sub(start))
 }
 
-func fibonacc(n int) int {
+func fibonacci(n int) int {
   if n <= 1 {
      return 1 
   }
 
-  return fibonacc(n - 2) + fibonacc(n - 1)
+  return fibonacci(n - 2) + fibonacci(n - 1)
 }

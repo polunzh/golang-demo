@@ -7,9 +7,6 @@ func main() {
 	fmt.Println(RemoveStringSlice(s, 1, 3))
 }
 
-func RemoveStringSlice(s []int, start int, end int) []int {
-	res := make([]int, len(s)-(end-start))
-	at := copy(res, s[0:start])
-	copy(res[at:], s[end:])
-	return res
+func splitStr(s string, i int) []string {
+	slice := byte[](s)
 }

@@ -27,32 +27,3 @@ func main() {
 		fmt.Printf("%s: %s\n", v, drinks[v])
 	}
 }
-
-/* Output:
-The following drinks are available:
-wine
-beer
-water
-coffee
-thea
-
-The french for wine is vin
-The french for beer is bière
-The french for water is eau
-The french for coffee is café
-The french for thea is thé
-
-Now the sorted output:
-The following sorted drinks are available:
-beer
-coffee
-thea
-water
-wine
-
-The french for beer is bière
-The french for coffee is café
-The french for thea is thé
-The french for water is eau
-The french for wine is vin
-*/
